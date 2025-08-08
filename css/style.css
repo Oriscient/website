@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: IBM;
+  src: url("../fonts/Flexi_IBM_VGA_True.woff2") format("woff2");
+}
+
+body {
+    --white: white;
+    --black: black;
+    --yellow: #e6c086;
+    --purple: #ac6484;
+    --deepPurple: #5a6a85;
+}
+
+body {
+    font-family: IBM;
+    font-size: 20px;
+    background-image: url('../images/background.png');
+    background-size: 100% auto;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/* This is a comment, by the way */
+
+.content {
+    border: 100px;
+    margin: 0px;
+    min-width: 600px;
+    width: 1250px;
+    display: grid;
+    grid-gap: 0;
+    grid-template:
+     "header header header" auto 
+     "asideLeft main asideRight" auto 
+     "footer footer footer" auto/220px auto 220px;
+
+}
+
+
+ @media (max-width: 600px) {
+  #aside-right {
+    display: none;
+  }
+  #aside-left {
+    display: none;
+  }
+}
+
+#headermain {
+    border: 3px solid;
+    border-color: var(--white);
+    border-radius: 15px;
+    background-color: var(--black);
+    padding: 20px;
+    margin: 20px;
+    font-size: 40px;
+    font-family: IBM;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrypage {
+    overflow: hidden;
+    color: white;
+}
+
+.entrypage h1 {
+    font-family: IBM;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-size: 75px;
+}
+
+.entrypage a:hover {
+    font-family: IBM;
+    color: black;
+    padding: 10px;
+    background: var(--white);
+    box-shadow: 0 0 10px 3px var(--white);
+
+    
+}
+
+a {
+    color: var(--white);
+    text-decoration: unset;
+}
+
+a:hover {
+    color: var(--black);
+    background: var(--white);
+    border-color: var(--white);
+   
+}
+
+.active {
+    color: var(--black);
+    background: var(--white);
+    border-color: var(--white);
+}
+
+main {
+    border-top: 3px solid;
+    border-top-color: var(--white);
+    border-bottom: 3px solid;
+    border-bottom-color: var(--white);
+    background: var(--black) ;
+    padding: 10px;
+    grid-area: main;
+
+}
+
+article {
+
+    padding: 10px;
+    margin: 10px;
+    color: var(--white);
+   
+}
+
+#aside-left {
+  
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-left: 3px solid;
+    border-left-color: var(--white);
+    border-top: 3px solid;
+    border-top-color: var(--white);
+    border-bottom: 3px solid;
+    border-bottom-color: var(--white);
+    background: var(--black);
+    padding: 10px;
+    grid-area: asideLeft;
+
+}
+
+#aside-right {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: 3px solid;
+    border-right-color: var(--white);
+    border-top: 3px solid;
+    border-top-color: var(--white);
+    border-bottom: 3px solid;
+    border-bottom-color: var(--white);
+    background: var(--black);
+    padding: 10px;
+    grid-area: asideRight;
+
+}
+
+footer {
+  
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+
+  
+}
