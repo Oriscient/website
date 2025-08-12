@@ -48,15 +48,15 @@ body {
 
 
  @media (max-width: 600px) {
-  #aside-right {
+  .aside-right {
     display: none;
   }
-  #aside-left {
+  .aside-left {
     display: none;
   }
 }
 
-#headermain {
+.headermain {
     border: 3px solid;
     border-color: var(--white);
     border-radius: 15px;
@@ -132,7 +132,7 @@ article {
    
 }
 
-#aside-left {
+.aside-left {
   
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -148,7 +148,21 @@ article {
 
 }
 
-#aside-right {
+.changelog-content {
+
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: clip;
+}
+
+.changelog_entry {
+
+    font-size: 12px;
+    padding: .75em;
+
+}
+
+.aside-right {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-right: 3px solid;
@@ -161,6 +175,24 @@ article {
     padding: 10px;
     grid-area: asideRight;
 
+}
+
+.current-obsessions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.current-obsessions li {
+    font-size: 14px;
+}
+
+.entry {
+max-height: 300px;
+
+}
+
+.entry-content {
+    font-size: 14px;
 }
 
 footer {
