@@ -95,7 +95,7 @@ body {
     
 }
 
-.article a{
+.article-standard a {
     color:var(--yellow);
     text-decoration: underline;
 }
