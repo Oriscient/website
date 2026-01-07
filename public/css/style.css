@@ -95,6 +95,11 @@ body {
     
 }
 
+.article a{
+    color:var(--yellow);
+    text-decoration: underline;
+}
+
 a {
     color: var(--white);
     text-decoration: unset;
