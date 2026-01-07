@@ -95,8 +95,9 @@ body {
     
 }
 
-.article-standard a {
+.link-article a {
     color:var(--yellow);
+    text-decoration: underline;
 }
 
 a {
